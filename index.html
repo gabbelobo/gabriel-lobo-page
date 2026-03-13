@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabriel Lobo | SRE & Full-Stack Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Gabriel Lobo — SRE & Full-Stack Engineer specializing in React, Node.js, Go, AWS, and cloud infrastructure. 6+ years building scalable web platforms."
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Gabriel Lobo | SRE & Full-Stack Engineer"
+    />
+    <meta
+      property="og:description"
+      content="SRE & Full-Stack Engineer specializing in React, Node.js, AWS, and cloud infrastructure."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Gabriel Lobo | SRE & Full-Stack Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="SRE & Full-Stack Engineer specializing in React, Node.js, AWS, and cloud infrastructure."
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Gabriel Löfgren Lobo",
+        "jobTitle": "SRE & Full-Stack Engineer",
+        "email": "lofgrenlobo@gmail.com",
+        "sameAs": [
+          "https://linkedin.com/in/gabbelobo",
+          "https://github.com/gabbelobo"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Florianópolis",
+          "addressRegion": "Santa Catarina",
+          "addressCountry": "BR"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidade Federal de Santa Catarina"
+        },
+        "knowsLanguage": ["Portuguese", "English", "Swedish"]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Skip to content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Top Navigation -->
+    <nav class="top-nav" aria-label="Section navigation">
+      <ul class="top-nav__list">
+        <li>
+          <a
+            href="#hero"
+            class="top-nav__link top-nav__link--active"
+            aria-label="Home"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z" />
+              <path d="M9 21V12h6v9" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#skills" class="top-nav__link" aria-label="Skills">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#experience" class="top-nav__link" aria-label="Experience">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+              <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="top-nav__link" aria-label="Projects">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polygon points="12 2 2 7 12 12 22 7 12 2" />
+              <polyline points="2 17 12 22 22 17" />
+              <polyline points="2 12 12 17 22 12" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="top-nav__link" aria-label="Contact">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M2 7l10 7 10-7" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="layout">
+      <!-- Sidebar -->
+      <aside class="sidebar" aria-label="Profile">
+        <div class="profile-card">
+          <div class="profile-card__avatar" aria-hidden="true">GL</div>
+
+          <h1 class="profile-card__name">Gabriel Lobo</h1>
+          <p class="profile-card__title">SRE | Full-Stack Engineer</p>
+          <p class="profile-card__location">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Florianópolis, Brasil
+          </p>
+
+          <nav class="profile-card__socials" aria-label="Social links">
+            <a
+              href="https://github.com/gabbelobo"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <svg class="icon"><use href="/icons.svg#github-icon" /></svg>
+            </a>
+            <a
+              href="https://linkedin.com/in/gabbelobo"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg class="icon"><use href="/icons.svg#linkedin-icon" /></svg>
+            </a>
+            <a href="mailto:lofgrenlobo@gmail.com" aria-label="Email">
+              <svg class="icon"><use href="/icons.svg#email-icon" /></svg>
+            </a>
+          </nav>
+
+          <a href="mailto:lofgrenlobo@gmail.com" class="profile-card__cta"
+            >Let's Talk</a
+          >
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main id="main-content" class="content">
+        <!-- Hero -->
+        <section id="hero" class="section hero reveal">
+          <span class="hero__greeting">Hello, I'm Gabriel</span>
+          <h2 class="hero__heading">
+            SRE &amp; FULL-STACK<br />
+            <span class="accent">ENGINEER</span>
+          </h2>
+          <p class="hero__bio">
+            Specialist in React &amp; Node.js with 6+ years building, operating,
+            and scaling web platforms and SaaS products. Strong background in
+            cloud infrastructure (AWS), CI/CD automation, and system
+            observability. Currently working remotely as an SRE at MindCloud
+            (Oregon, US).
+          </p>
+        </section>
+
+        <!-- Skills -->
+        <section
+          id="skills"
+          class="section reveal"
+          aria-labelledby="skills-heading"
+        >
+          <h2 id="skills-heading" class="section__title">
+            Skills &amp;<br /><span class="accent">Expertise</span>
+          </h2>
+          <div class="cards-grid">
+            <article class="card">
+              <div class="card__icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <h3 class="card__title">Frontend</h3>
+              <ul class="card__tags">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Redux</li>
+                <li>Material-UI</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card__icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="2" />
+                  <path d="M7 12h10" />
+                  <path d="M7 8h10" />
+                  <path d="M7 16h6" />
+                </svg>
+              </div>
+              <h3 class="card__title">Backend</h3>
+              <ul class="card__tags">
+                <li>Go</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>C#</li>
+                <li>ASP.NET</li>
+                <li>REST APIs</li>
+                <li>GraphQL</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+                <li>MySQL</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card__icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M22 12a10 10 0 01-20 0" />
+                  <path d="M2 12a10 10 0 0120 0" />
+                  <path d="M12 2v4" />
+                  <path d="M12 18v4" />
+                  <circle cx="12" cy="12" r="2" />
+                </svg>
+              </div>
+              <h3 class="card__title">DevOps &amp; Cloud</h3>
+              <ul class="card__tags">
+                <li>Docker</li>
+                <li>AWS</li>
+                <li>Lambda</li>
+                <li>ECS</li>
+                <li>SQS</li>
+                <li>Azure DevOps</li>
+                <li>CI/CD</li>
+                <li>Git</li>
+                <li>NGINX</li>
+                <li>Redis</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card__icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"
+                  />
+                </svg>
+              </div>
+              <h3 class="card__title">Additional</h3>
+              <ul class="card__tags">
+                <li>System Integration</li>
+                <li>Data Analysis</li>
+                <li>ETL Pipelines</li>
+                <li>TDD</li>
+                <li>Python</li>
+                <li>MATLAB</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <!-- Experience -->
+        <section
+          id="experience"
+          class="section reveal"
+          aria-labelledby="experience-heading"
+        >
+          <h2 id="experience-heading" class="section__title">
+            Work<br /><span class="accent">Experience</span>
+          </h2>
+          <div class="timeline">
+            <article class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__content card">
+                <div class="timeline__header">
+                  <h3 class="timeline__role">Site Reliability Engineer</h3>
+                  <span class="timeline__date">Nov 2024 &mdash; Present</span>
+                </div>
+                <p class="timeline__company">
+                  MindCloud &middot; Remote (Oregon, US)
+                </p>
+                <p class="timeline__desc">
+                  Progressed through Operations, Full-Stack, and SRE roles.
+                  Designed a custom ECS auto-scaling solution with Lambda,
+                  Redis, and EventBridge, reducing costs by 40%. Improved system
+                  observability, monitoring, and deployment workflows for a
+                  high-throughput integration platform.
+                </p>
+                <ul class="card__tags">
+                  <li>Node.js</li>
+                  <li>TypeScript</li>
+                  <li>React</li>
+                  <li>AWS</li>
+                  <li>Redis</li>
+                  <li>Lambda</li>
+                  <li>ECS</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__content card">
+                <div class="timeline__header">
+                  <h3 class="timeline__role">Systems Development Analyst</h3>
+                  <span class="timeline__date">Sep 2021 &mdash; Nov 2024</span>
+                </div>
+                <p class="timeline__company">
+                  Norus &middot; Florianópolis, Brasil
+                </p>
+                <p class="timeline__desc">
+                  Led front-end development for energy market systems,
+                  establishing coding standards and CI/CD processes. Engineered
+                  backend APIs with C#/.NET. Independently orchestrated CI/CD
+                  pipelines using Azure DevOps, deploying to AWS ECS and
+                  Amplify.
+                </p>
+                <ul class="card__tags">
+                  <li>React</li>
+                  <li>C#</li>
+                  <li>ASP.NET</li>
+                  <li>Azure DevOps</li>
+                  <li>Docker</li>
+                  <li>AWS</li>
+                  <li>Playwright</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__content card">
+                <div class="timeline__header">
+                  <h3 class="timeline__role">Full-Stack Developer</h3>
+                  <span class="timeline__date">Aug 2020 &mdash; Sep 2021</span>
+                </div>
+                <p class="timeline__company">
+                  EquipeDigital &middot; Florianópolis, Brasil
+                </p>
+                <p class="timeline__desc">
+                  Modernized legacy systems and built new web applications for
+                  diverse clients. Led migration from proprietary CMS to React,
+                  TypeScript, Node.js, and MongoDB stack. Implemented CI/CD with
+                  Docker for AWS deployments.
+                </p>
+                <ul class="card__tags">
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>MongoDB</li>
+                  <li>PHP</li>
+                  <li>Docker</li>
+                  <li>AWS</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__content card">
+                <div class="timeline__header">
+                  <h3 class="timeline__role">Research Assistant</h3>
+                  <span class="timeline__date">Jan 2019 &mdash; Jan 2020</span>
+                </div>
+                <p class="timeline__company">
+                  Lepten/Boiling &middot; UFSC, Florianópolis
+                </p>
+                <p class="timeline__desc">
+                  Applied data science to renewable energy research. Developed
+                  wind power forecasting models using the WRF model. Created ETL
+                  scripts for data processing and contributed to research
+                  papers.
+                </p>
+                <ul class="card__tags">
+                  <li>Python</li>
+                  <li>MATLAB</li>
+                  <li>Data Analysis</li>
+                  <li>Shell</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section
+          id="projects"
+          class="section reveal"
+          aria-labelledby="projects-heading"
+        >
+          <h2 id="projects-heading" class="section__title">
+            Key<br /><span class="accent">Projects</span>
+          </h2>
+          <div class="cards-grid">
+            <article class="card card--project">
+              <h3 class="card__title">Sparta Fitness Tracking</h3>
+              <p class="card__desc">
+                Social fitness tracking app for logging gym attendance and
+                workouts. Features competitive comparisons with friends and
+                analytics dashboards displaying workout history and monthly
+                performance metrics.
+              </p>
+              <ul class="card__tags">
+                <li>React Native</li>
+                <li>Golang</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </article>
+
+            <article class="card card--project">
+              <h3 class="card__title">Freelance Web Development</h3>
+              <p class="card__desc">
+                Designed and developed custom websites and web applications for
+                diverse clients. Built responsive, performance-optimized
+                solutions with robust backend systems and CI/CD pipelines for
+                automated deployments.
+              </p>
+              <ul class="card__tags">
+                <li>Next.js</li>
+                <li>React</li>
+                <li>TailwindCSS</li>
+                <li>Node.js</li>
+                <li>Golang</li>
+                <li>C#</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <!-- Tools -->
+        <section
+          id="tools"
+          class="section reveal"
+          aria-labelledby="tools-heading"
+        >
+          <h2 id="tools-heading" class="section__title">
+            Tools &amp;<br /><span class="accent">Technologies</span>
+          </h2>
+          <div class="tools-grid">
+            <div class="tool-item">React</div>
+            <div class="tool-item">Node.js</div>
+            <div class="tool-item">TypeScript</div>
+            <div class="tool-item">Go</div>
+            <div class="tool-item">AWS</div>
+            <div class="tool-item">Docker</div>
+            <div class="tool-item">PostgreSQL</div>
+            <div class="tool-item">Redis</div>
+            <div class="tool-item">Next.js</div>
+            <div class="tool-item">C# / .NET</div>
+            <div class="tool-item">MongoDB</div>
+            <div class="tool-item">Git</div>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section
+          id="contact"
+          class="section reveal"
+          aria-labelledby="contact-heading"
+        >
+          <h2 id="contact-heading" class="section__title">
+            Let's<br /><span class="accent">Collaborate</span>
+          </h2>
+          <p class="contact__text">
+            Interested in working together? I'm always open to discussing new
+            projects, creative ideas, or opportunities to be part of your team.
+          </p>
+          <div class="contact__links">
+            <a href="mailto:lofgrenlobo@gmail.com" class="contact__link">
+              <svg class="icon"><use href="/icons.svg#email-icon" /></svg>
+              lofgrenlobo@gmail.com
+            </a>
+            <a
+              href="https://linkedin.com/in/gabbelobo"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact__link"
+            >
+              <svg class="icon"><use href="/icons.svg#linkedin-icon" /></svg>
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/gabbelobo"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact__link"
+            >
+              <svg class="icon"><use href="/icons.svg#github-icon" /></svg>
+              GitHub
+            </a>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <p>&copy; 2026 Gabriel Lobo. All rights reserved.</p>
+        </footer>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
