@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gabriellobo.dev/sitemap.xml
+Sitemap: https://lobo.dev/sitemap.xml

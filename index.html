@@ -19,6 +19,8 @@
       content="SRE & Full-Stack Engineer specializing in React, Node.js, AWS, and cloud infrastructure."
     />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lobo.dev/" />
+    <meta property="og:image" content="https://lobo.dev/image.png" />
     <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Card -->
@@ -31,24 +33,41 @@
       name="twitter:description"
       content="SRE & Full-Stack Engineer specializing in React, Node.js, AWS, and cloud infrastructure."
     />
+    <meta name="twitter:image" content="https://lobo.dev/image.png" />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="canonical" href="" />
+    <link rel="canonical" href="https://lobo.dev/" />
+    <meta name="theme-color" content="#0a0a0f" />
 
-    <!-- Fonts -->
+    <!-- Fonts (non-render-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      as="style"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media = 'all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      />
+    </noscript>
 
     <!-- Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
+        "url": "https://lobo.dev",
         "name": "Gabriel Löfgren Lobo",
+        "image": "https://lobo.dev/image.png",
         "jobTitle": "SRE & Full-Stack Engineer",
         "email": "lofgrenlobo@gmail.com",
         "sameAs": [
@@ -173,7 +192,15 @@
       <!-- Sidebar -->
       <aside class="sidebar" aria-label="Profile">
         <div class="profile-card">
-          <div class="profile-card__avatar" aria-hidden="true">GL</div>
+          <div class="profile-card__avatar">
+            <img
+              src="/image.png"
+              alt="Gabriel Lobo"
+              width="120"
+              height="120"
+              loading="eager"
+            />
+          </div>
 
           <h1 class="profile-card__name">Gabriel Lobo</h1>
           <p class="profile-card__title">SRE | Full-Stack Engineer</p>

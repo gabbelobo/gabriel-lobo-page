@@ -78,6 +78,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Noise texture overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.035;
+  pointer-events: none;
+  z-index: 9999;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -151,7 +162,9 @@ ul {
   height: 42px;
   border-radius: 50%;
   color: var(--color-text-muted);
-  transition: color var(--transition-fast), background var(--transition-fast);
+  transition:
+    color var(--transition-fast),
+    background var(--transition-fast);
 }
 
 .top-nav__link:hover {
@@ -206,14 +219,17 @@ ul {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-accent), #6366f1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: var(--text-3xl);
-  font-weight: 700;
-  color: var(--color-bg);
+  overflow: hidden;
   flex-shrink: 0;
+  border: 2px solid var(--color-border-hover);
+}
+
+.profile-card__avatar img {
+  width: 130%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 100% 30%;
+  margin-left: 7%;
 }
 
 .profile-card__name {
@@ -282,7 +298,9 @@ ul {
   border-radius: 50%;
   border: 1px solid var(--color-border);
   color: var(--color-text-secondary);
-  transition: color var(--transition-fast), border-color var(--transition-fast),
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast),
     background var(--transition-fast);
 }
 
@@ -309,7 +327,9 @@ ul {
   font-weight: 600;
   font-size: var(--text-sm);
   border-radius: 9999px;
-  transition: background var(--transition-fast), transform var(--transition-fast);
+  transition:
+    background var(--transition-fast),
+    transform var(--transition-fast);
 }
 
 .profile-card__cta:hover {
@@ -381,7 +401,9 @@ ul {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   padding: var(--space-lg);
-  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+  transition:
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
 }
 
 .card:hover {
@@ -539,7 +561,9 @@ ul {
   font-size: var(--text-sm);
   font-weight: 500;
   color: var(--color-text-secondary);
-  transition: color var(--transition-fast), border-color var(--transition-fast),
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast),
     background var(--transition-fast);
 }
 
@@ -605,7 +629,9 @@ ul {
 .reveal {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
 }
 
 .reveal--visible {
@@ -656,7 +682,6 @@ ul {
   .profile-card__avatar {
     width: 96px;
     height: 96px;
-    font-size: var(--text-2xl);
   }
 
   .profile-card__stats {
