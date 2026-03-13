@@ -152,6 +152,8 @@ ul {
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--color-border);
   border-radius: 9999px;
+  transform: translateZ(0);
+  will-change: backdrop-filter;
 }
 
 .top-nav__link {
