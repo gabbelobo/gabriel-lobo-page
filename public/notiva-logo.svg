@@ -1,0 +1,20 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+	<style>
+		.s0 { fill: #7c3aed }
+		.s1 { fill: #d4c3f1 }
+		.s2 { fill: #c1a6ee }
+		.s3 { fill: #a78bfa }
+	</style>
+	<defs>
+		<clipPath id="rounded">
+			<rect width="1200" height="1200" rx="300"/>
+		</clipPath>
+	</defs>
+	<g id="Folder 1" clip-path="url(#rounded)">
+		<path id="Shape 1" class="s0" d="m300.06 0.04v1199.93h-251.87c-25.87-0.93-46.72-21.49-48.12-47.22v-1105.5c1.39-25.65 22.12-46.16 47.87-47.21z"/>
+		<path id="Shape 1 copy" class="s0" d="m900.02 1199.97v-1199.93h252.04c26.66 1.08 47.94 23.04 47.94 49.96v1100c0 27.01-21.41 49.01-48.19 49.97z"/>
+		<path id="Shape 2 copy" class="s1" d="m904.02 0.04l-4.03 1199.78-592.54-804.58-294.61-378.69c8.71-9.67 21.13-15.92 35.02-16.51z"/>
+		<path id="Layer 2" class="s2" d="m300 400l-287.39-383.19c9.15-10.31 22.51-16.81 37.39-16.81h250z"/>
+		<path id="Layer 1" class="s3" d="m1132 907.99l-231.85 292.01h-0.04l-887.51-1183.18q1.73-1.96 3.66-3.72z"/>
+	</g>
+</svg>

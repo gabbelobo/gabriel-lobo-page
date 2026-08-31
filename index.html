@@ -69,7 +69,7 @@
         "name": "Gabriel Löfgren Lobo",
         "image": "https://lobo.dev/image.png",
         "jobTitle": "SRE & Full-Stack Engineer",
-        "email": "lofgrenlobo@gmail.com",
+        "email": "gabriel@lobo.dev",
         "sameAs": [
           "https://linkedin.com/in/gabbelobo",
           "https://github.com/gabbelobo"
@@ -84,7 +84,12 @@
           "@type": "CollegeOrUniversity",
           "name": "Universidade Federal de Santa Catarina"
         },
-        "knowsLanguage": ["Portuguese", "English", "Swedish"]
+        "knowsLanguage": ["Portuguese", "English", "Swedish"],
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Gabriel Lofgren Lobo LTDA",
+          "taxID": "57.917.649/0001-99"
+        }
       }
     </script>
   </head>
@@ -238,12 +243,12 @@
             >
               <svg class="icon"><use href="/icons.svg#linkedin-icon" /></svg>
             </a>
-            <a href="mailto:lofgrenlobo@gmail.com" aria-label="Email">
+            <a href="mailto:gabriel@lobo.dev" aria-label="Email">
               <svg class="icon"><use href="/icons.svg#email-icon" /></svg>
             </a>
           </nav>
 
-          <a href="mailto:lofgrenlobo@gmail.com" class="profile-card__cta"
+          <a href="mailto:gabriel@lobo.dev" class="profile-card__cta"
             >Let's Talk</a
           >
         </div>
@@ -536,17 +541,118 @@
           </h2>
           <div class="cards-grid">
             <article class="card card--project">
-              <h3 class="card__title">Sparta Fitness Tracking</h3>
+              <div class="card__header">
+                <img
+                  class="card__logo"
+                  src="/sparta-logo.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+                <h3 class="card__title">
+                  <a
+                    href="https://spartafitness.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="card__title-link"
+                    >Sparta Fitness Tracking</a
+                  >
+                </h3>
+                <a
+                  href="https://spartafitness.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="card__external"
+                  aria-label="Visit spartafitness.app (opens in a new tab)"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
               <p class="card__desc">
                 Social fitness tracking app for logging gym attendance and
-                workouts. Features competitive comparisons with friends and
-                analytics dashboards displaying workout history and monthly
-                performance metrics.
+                workouts, with native Android and iOS apps plus Wear OS and
+                Apple Watch companions. Features competitive comparisons with
+                friends and analytics dashboards backed by a Go API.
               </p>
               <ul class="card__tags">
-                <li>React Native</li>
-                <li>Golang</li>
+                <li>Kotlin</li>
+                <li>Swift</li>
+                <li>Go</li>
                 <li>PostgreSQL</li>
+                <li>Astro</li>
+              </ul>
+            </article>
+
+            <article class="card card--project">
+              <div class="card__header">
+                <img
+                  class="card__logo card__logo--sm"
+                  src="/notiva-logo.svg"
+                  alt=""
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                />
+                <h3 class="card__title">
+                  <a
+                    href="https://notiva.lobo.dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="card__title-link"
+                    >Notiva</a
+                  >
+                </h3>
+                <a
+                  href="https://notiva.lobo.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="card__external"
+                  aria-label="Visit notiva.lobo.dev (opens in a new tab)"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+              <p class="card__desc">
+                Desktop app for issuing Brazilian service invoices (NFS-e) in
+                batch: one template per company, one spreadsheet per month.
+                Signs XML with XMLDSig and talks to the national SEFIN API over
+                mTLS, with a Go backend for auth, billing, and backup.
+              </p>
+              <ul class="card__tags">
+                <li>Electron</li>
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Go</li>
+                <li>Astro</li>
               </ul>
             </article>
 
@@ -609,9 +715,9 @@
             projects, creative ideas, or opportunities to be part of your team.
           </p>
           <div class="contact__links">
-            <a href="mailto:lofgrenlobo@gmail.com" class="contact__link">
+            <a href="mailto:gabriel@lobo.dev" class="contact__link">
               <svg class="icon"><use href="/icons.svg#email-icon" /></svg>
-              lofgrenlobo@gmail.com
+              gabriel@lobo.dev
             </a>
             <a
               href="https://linkedin.com/in/gabbelobo"
@@ -637,6 +743,9 @@
         <!-- Footer -->
         <footer class="footer">
           <p>&copy; 2026 Gabriel Lobo. All rights reserved.</p>
+          <p class="footer__legal">
+            Gabriel Lofgren Lobo LTDA &middot; CNPJ 57.917.649/0001-99
+          </p>
         </footer>
       </main>
     </div>
